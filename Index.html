@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Do You Love Me?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+    h1 {
+      color: #ff4757;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #ff6b81;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    button:hover {
+      background-color: #ff4757;
+    }
+    .celebration {
+      display: none;
+      margin-top: 20px;
+      font-size: 24px;
+      color: #2ed573;
+    }
+  </style>
+</head>
+<body>
+  <h1>Do You Love Me, Janeman (Sadiqa)? ❤️</h1>
+  <button id="yesButton">Yes</button>
+  <button id="ofCourseButton">Of Course</button>
+  <div class="celebration" id="celebration">
+    🎉 Yay! I knew it! 🎉
+  </div>
+  <script>
+    const yesButton = document.getElementById("yesButton");
+    const ofCourseButton = document.getElementById("ofCourseButton");
+    const celebration = document.getElementById("celebration");
+
+    function showCelebration() {
+      celebration.style.display = "block";
+    }
+
+    yesButton.addEventListener("click", showCelebration);
+    ofCourseButton.addEventListener("click", showCelebration);
+  </script>
+</body>
+</html>
